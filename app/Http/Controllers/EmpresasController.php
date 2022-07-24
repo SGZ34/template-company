@@ -10,11 +10,7 @@ use Illuminate\Support\Facades\DB;
 
 class EmpresasController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $empresas = Empresa::select("empresas.*")->where("state", 1)->get();
@@ -27,11 +23,7 @@ class EmpresasController extends Controller
         return view("empresas.index", compact("empresas", "state", "cantidadCiudades"));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         $ciudades = Ciudad::all();
@@ -39,12 +31,7 @@ class EmpresasController extends Controller
         return view("empresas.create", compact("ciudades"));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
         $campos = [
@@ -79,23 +66,30 @@ class EmpresasController extends Controller
         return redirect("/empresas")->with("success", "Empresa creada satisfactoriamente");
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function show($id)
     {
-        //
+        if ($id) {
+            try {
+                $empresa = Empresa::where("id", $id)->first();
+
+                if ($empresa) {
+                    $ciudades = Detalle_Empresa::select("detalles_empresas.*", "ciudades.name as nameCiudad")
+                        ->join("ciudades", "detalles_empresas.idCiudad", "=", "ciudades.id")
+                        ->where("detalles_empresas.idEmpresa", $id)
+                        ->get();
+
+
+                    return view("empresas.details", compact("empresa", "ciudades"));
+                }
+                return redirect("/empresas")->with("error", "La empresa no fue encontrada");
+            } catch (\Exception $e) {
+                return redirect("/empresas")->with("error", $e->getMessage());
+            }
+        }
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
         if ($id) {
@@ -116,13 +110,6 @@ class EmpresasController extends Controller
         }
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         if ($id) {
@@ -149,6 +136,13 @@ class EmpresasController extends Controller
                         }
                     } else if ($cuentaDetalles == 0 && $request["idCiudad"] == null) {
                         return back()->with("error", "seleccione por favor una o mas ciudades");
+                    } else if ($cuentaDetalles > 0 && $request["idCiudad"] != null) {
+                        foreach ($request["idCiudad"] as $idCiudad) {
+                            Detalle_Empresa::create([
+                                "idEmpresa" => $empresa->id,
+                                "idCiudad" => $idCiudad
+                            ]);
+                        }
                     }
                     DB::commit();
                     return redirect("/empresas")->with("success", "Empresa editada satisfactoriamente");
@@ -162,12 +156,7 @@ class EmpresasController extends Controller
         return redirect("/empresas")->with("error", "El cambio de información no se pudo realizar porque no se encontró la empresa");
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
         //

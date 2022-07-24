@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="">
        <form action="/empresas" method="post">
             @csrf
             <div class="row">

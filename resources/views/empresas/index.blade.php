@@ -6,7 +6,7 @@
 
 
 @section('content')
-    <div class="card">
+    <div class="card ">
         <div class="card-header">
             <div class="d-flex justify-content-center">
                 <a href="/empresas/create" class="btn btn-outline-dark mr-2">Crear empresa</a>
@@ -19,9 +19,9 @@
         </div>
         <div class="card-body">
             
-            @if (!$empresas)
-                <h1 class="text-center">No hay información</h1>
-            @else
+            
+                
+            
             <table class="table table-bordered" id="table">
                 <thead>
                         <tr>
@@ -63,20 +63,22 @@
                                 </div>
                             </td>
                             <td class="d-flex justify-content-center">
-                                <a href="/empresas/{{$empresa->id}}/edit" class="btn btn-warning text-white text-sm mr-4"><i class="fas fa-edit"></i></a>
-                                @if ($empresa->state == 0)
-                                <a href="/empresas/updateState/1/{{$empresa->id}}" class="btn btn-success text-whit text-sm"><i class="fas fa-check"></i></a>    
-                                @else
-                                <a href="/empresas/updateState/0/{{$empresa->id}}" class="btn btn-danger text-white text-sm"><i class="fas fa-ban"></i></a>    
-                                @endif
+                                <a href="/empresas/{{$empresa->id}}" class="btn btn-success text-sm"><i class="fa fa-info" aria-hidden="true"></i></a>
                                 
+                                <a href="/empresas/{{$empresa->id}}/edit" class="btn btn-warning text-white text-sm mx-4"><i class="fas fa-edit"></i></a>
+
+                                @if ($empresa->state == 0)
+                                    <a href="/empresas/updateState/1/{{$empresa->id}}" class="btn btn-success text-whit text-sm "><i class="fas fa-check"></i></a>    
+                                @else
+                                    <a href="/empresas/updateState/0/{{$empresa->id}}" class="btn btn-danger text-white text-sm "><i class="fas fa-ban"></i></a>    
+                                @endif
                             </td>
                         </tr>           
 
                     @endforeach
                 </tbody>
             </table>    
-            @endif
+            
         </div>
     </div>
 @endsection

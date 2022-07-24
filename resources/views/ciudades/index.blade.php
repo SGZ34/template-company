@@ -13,9 +13,9 @@
             </div>
         </div>
         <div class="card-body">
-            @if (count($ciudades) == 0 )
-                <h1 class="text-center">No hay información</h1>
-            @else
+            
+                
+            
                 <table class="table table-bordered" id="table">
                     <thead>
                             <tr>
@@ -36,7 +36,7 @@
                                 <td>{{$ciudad->id}}</td>
                                 <td>{{$ciudad->name}}</td>
                                 <td class="d-flex justify-content-center">
-                                    <a href="/ciudades/{{$ciudad->id}}/edit" class="btn btn-warning text-white"><i class="fas fa-edit"></i></a>
+                                    <a href="/ciudades/{{$ciudad->id}}/edit" class="btn btn-warning text-white text-sm"><i class="fas fa-edit"></i></a>
                                     
                                 </td>
                             </tr>           
@@ -44,7 +44,7 @@
                         @endforeach
                     </tbody>
                 </table>
-            @endif
+            
         </div>
     </div>
 @endsection

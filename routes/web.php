@@ -3,6 +3,7 @@
 use App\Http\Controllers\CiudadesController;
 use App\Http\Controllers\EmpleosController;
 use App\Http\Controllers\EmpresasController;
+use App\Http\Controllers\VacantesController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
@@ -38,8 +39,16 @@ Route::group(["middleware" => "auth"], function () {
     Route::get("/empresas/showDisabled", [EmpresasController::class, "showDisabled"]);
     Route::get("/empresas/eliminarCiudadExistente/{id}", [EmpresasController::class, "eliminarCiudadExistente"]);
 
+    //vacantes
+    Route::get("/vacantes/updateState/{state}/{id}", [VacantesController::class, 'updateState']);
+    Route::get("/vacantes/showDisabled", [VacantesController::class, "showDisabled"]);
+    Route::get("/vacantes/getCity/{id}", [VacantesController::class, "getCity"]);
     //Resource
-    Route::resource("ciudades", CiudadesController::class);
-    Route::resource("empleos", EmpleosController::class);
-    Route::resource("empresas", EmpresasController::class);
+    Route::resources([
+        "ciudades" => CiudadesController::class,
+        "empleos" => EmpleosController::class,
+        "empresas" => EmpresasController::class,
+        "vacantes" => VacantesController::class,
+
+    ]);
 });

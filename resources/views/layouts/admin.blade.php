@@ -128,7 +128,7 @@
                             data-accordion="false"
                         >
                         <li class="nav-item mb-4">
-                          <a href="/" class="nav-link">
+                          <a href="/home" class="nav-link">
                             <i class="nav-icon fas fa-tachometer-alt-average"></i>
                               <p>
                                   Dashboard
@@ -191,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="content container">@yield('content')</div>
+                <div class="p-4">@yield('content')</div>
             </div>
 
             <aside class="control-sidebar control-sidebar-dark"></aside>

@@ -19,9 +19,7 @@
         </div>
         <div class="card-body">
             
-            @if (!$empleos)
-                <h1 class="text-center">No hay información</h1>
-            @else
+           
             <table class="table table-bordered" id="table">
                 <thead>
                         <tr>
@@ -68,7 +66,7 @@
                     @endforeach
                 </tbody>
             </table>    
-            @endif
+            
         </div>
     </div>
 @endsection
