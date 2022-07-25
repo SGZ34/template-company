@@ -21,7 +21,7 @@
                             <select name="idEmpleo" id="idEmpleo" class="form-control @error('idEmpleo') is-invalid @enderror">
                                 <option value="">--Seleccione--</option>
                                 @foreach ($empleos as $empleo)
-                                    <option value="{{$empleo->id}}">{{$empleo->name}}</option>
+                                    <option value="{{$empleo->id}}" {{($empleo->id == old("idEmpleo")) ? 'selected' : '' }}>{{$empleo->name}}</option>
                                 @endforeach
                             </select>
                             @error('idEmpleo')
@@ -38,7 +38,13 @@
                                 </span>
                             @enderror
                             <label for="" class="mt-3">Cantidad de vacantes totales</label>
-                                <input type="text" name="cantidadVacantes" class="form-control" readonly>
+                                <input type="number" name="cantidadTotalVacantes" id="cantidadTotalVacantes" class="form-control @error('cantidadTotalVacantes') is-invalid @enderror" readonly>
+                                @error('cantidadTotalVacantes')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                
                         </div>
                     </div>
                 </div>
@@ -46,21 +52,17 @@
                     <div class="card">
                         <div class="card-header">
                             <h5 class="text-center">
-                                Empresas que la solicitan
+                                Ciudades que la solicitan
                             </h5>
                         </div>
                         <div class="card-body">
-                            <label for="">Seleccione la empresa</label>
-                            <select id="empresa" class="form-control" onchange="handleOnChange()">
-                                <option value="">--Seleccione--</option>
-                                @foreach ($empresas as $empresa)
-                                    <option value="{{$empresa->id}}">{{$empresa->name}}</option>
-                                @endforeach
-                            </select>
-                            <label for="" class="mt-4">Seleccione la ciudad</label>
+                            <label for="" class="">Seleccione la ciudad</label>
                             <select id="ciudad" class="form-control">
                                 <option value="">--Seleccione--</option>
-                                
+                                @foreach ($ciudades as $ciudad)
+                                <option value="{{$ciudad->id}}">{{$ciudad->name}}</option>
+                                    
+                                @endforeach
                             </select>
                             <label for="" class="mt-4">Digite la cantidad disponible</label>
                             <input type="number" class="form-control" id="cantidadVacantes">
@@ -75,7 +77,7 @@
                                 <thead>
                                     <tr>
                                         <th>Nombre</th>
-                                        <th>Ciudades</th>
+                                        <th>Cantidad</th>
                                         <th>Acciones</th>
                                     </tr>
                                 </thead>
@@ -95,5 +97,5 @@
 @endsection
 
 @section('scripts')
-    <script src="/js/scripts.js"></script>
+<script src="/js/scripts.js"></script>
 @endsection

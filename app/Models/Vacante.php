@@ -11,4 +11,6 @@ class Vacante extends Model
     protected $table = "vacantes";
 
     protected $fillable = ["id", "idEmpleo", "description", "cantidad", "state"];
+
+    public $timestamps = true;
 }

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif !important;
+}
+
+:root {
+    --dark-primary: #000;
+    --dark: #262626;
+    --primary: #54822f;
+    --white: #fff;
+    --white-section: #f2f2f3;
+}
+
+::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    z-index: 1000;
+    transition: 0.4s;
+}
+.nav.active {
+    padding: 0;
+    box-shadow: 0 1px 4px var(--dark-primary);
+}
+
+.icon-menu {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    display: none;
+}
+.icon {
+    display: flex;
+    text-decoration: none;
+}
+
+.icon img {
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+
+.menu li {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    background: var(--primary);
+}
+
+.menu li:hover > a {
+    color: #fff;
+}
+
+.menu li.link-active {
+    background: var(--primary);
+}
+.menu li.link-active > a {
+    color: var(--white);
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--dark);
+    padding: 10px 20px;
+}
+
+header {
+    height: 100vh;
+    background: url("/img/team.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 140px;
+}
+
+.content-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffefba;
+    background: -webkit-linear-gradient(to right, #ffffff, #ffefba);
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 239, 186, 0.7)
+    );
+}
+
+.content-header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--dark);
+}
+
+.content-header h1 a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #372f3a;
+    letter-spacing: 1px;
+}
+
+.content-header h1 a:hover {
+    text-decoration: underline;
+}
+
+.content-header h6 {
+    color: var(--dark-primary);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.btn-header {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-header:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+section {
+    padding-top: 20px;
+    height: 100vh;
+}
+
+section:nth-child(odd) {
+    background: var(--white);
+}
+
+section:nth-child(even) {
+    background: var(--white-section);
+}
+
+section h1 {
+    color: var(--primary);
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+section h1::before,
+section h1::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    width: 100px;
+    height: 2px;
+    margin: 0 10px;
+    background: var(--primary);
+}
+@media screen and (max-width: 910px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        background: var(--primary);
+        width: 40vw;
+        height: 100vh;
+        margin-top: 0;
+        box-shadow: 0 0 8px var(--dark-primary);
+    }
+    .menu li > a {
+        color: var(--white);
+    }
+    .menu li {
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+    .menu li:hover {
+        background: var(--white);
+    }
+
+    .menu li:hover > a {
+        color: var(--dark);
+    }
+
+    .menu li a {
+        width: 40vw;
+        text-align: center;
+    }
+}

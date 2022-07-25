@@ -4,6 +4,7 @@ use App\Http\Controllers\CiudadesController;
 use App\Http\Controllers\EmpleosController;
 use App\Http\Controllers\EmpresasController;
 use App\Http\Controllers\VacantesController;
+use App\Http\Controllers\HomeController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
@@ -19,15 +20,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing.welcome');
 });
 
 Auth::routes(["register" => false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 
 
 Route::group(["middleware" => "auth"], function () {
+    //home
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
 
     //empleos
     Route::get("/empleos/updateState/{state}/{id}", [EmpleosController::class, 'updateState']);
@@ -42,8 +45,9 @@ Route::group(["middleware" => "auth"], function () {
     //vacantes
     Route::get("/vacantes/updateState/{state}/{id}", [VacantesController::class, 'updateState']);
     Route::get("/vacantes/showDisabled", [VacantesController::class, "showDisabled"]);
-    Route::get("/vacantes/getCity/{id}", [VacantesController::class, "getCity"]);
-    //Resource
+    Route::get("/vacantes/eliminarCiudadExistente/{id}", [VacantesController::class, 'eliminarCiudadExistente']);
+
+    //Resources
     Route::resources([
         "ciudades" => CiudadesController::class,
         "empleos" => EmpleosController::class,

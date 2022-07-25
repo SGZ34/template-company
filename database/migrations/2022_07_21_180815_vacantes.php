@@ -20,6 +20,7 @@ class Vacantes extends Migration
             $table->text("description");
             $table->bigInteger("cantidad");
             $table->boolean('state');
+            $table->timestamps();
         });
     }
 

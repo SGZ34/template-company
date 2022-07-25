@@ -15,14 +15,14 @@ class DetallesVacantes extends Migration
     {
         Schema::create('detalles_vacantes', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger("cantidad");
             $table->unsignedBigInteger("idVacante");
             $table->foreign("idVacante")->references("id")->on("vacantes");
-            $table->unsignedBigInteger("idEmpresa");
-            $table->foreign("idEmpresa")->references("id")->on("empresas");
             $table->unsignedBigInteger("idCiudad");
             $table->foreign("idCiudad")->references("id")->on("ciudades");
         });
-    }
+    } 
+    
 
     /**
      * Reverse the migrations.

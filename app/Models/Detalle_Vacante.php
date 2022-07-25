@@ -10,7 +10,7 @@ class Detalle_Vacante extends Model
     use HasFactory;
     protected $table = "detalles_vacantes";
 
-    protected $fillable = ["id", "idVacante", "idCiudad", "idEmpresa"];
+    protected $fillable = ["id", "idVacante", "idCiudad", "cantidad"];
 
     public $timestamps = false;
 }

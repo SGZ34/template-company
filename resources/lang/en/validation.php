@@ -159,7 +159,10 @@ return [
     */
 
     'attributes' => [
-        "name" => "nombre"
+        "name" => "nombre",
+        "idEmpleo" => "empleo",
+        "description" => "descripción",
+
     ],
 
 ];
