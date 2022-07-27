@@ -19,4 +19,9 @@ $(document).ready(function () {
     $(".icon-menu").on("click", function () {
         document.querySelector("ul.menu").classList.toggle("menu-active");
     });
+
+    $("ul.menu li.link-nav i.caret").click(function () {
+        $(this.parentElement).children(".sub-menu").slideToggle();
+        $(this.parentElement).toggleClass("link-nav-active");
+    });
 });

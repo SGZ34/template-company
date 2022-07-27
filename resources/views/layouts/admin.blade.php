@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>GRTEMPORALES</title>
+        <title>GR Temporales</title>
 
         
         <link
@@ -107,7 +107,7 @@
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <a href="/" class="brand-link text-center">
                    
-                    <span class="brand-text font-weight-bold">GRTEMPORALES</span>
+                    <span class="brand-text font-weight-bold">GR Temporales</span>
                 </a>
 
                 <div class="sidebar">

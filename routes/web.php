@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WelcomeController::class, 'index']);
+Route::get('/ofertas-laborales', [WelcomeController::class, 'ofertas']);
 
 Auth::routes(["register" => false]);
 

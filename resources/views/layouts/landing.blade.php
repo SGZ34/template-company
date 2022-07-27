@@ -5,47 +5,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>GR Temporales - @yield('title')</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="icon" href="/img/icon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/css/animations/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/css/styles.css">
-        
-        
     </head>
     <body>
         
         <nav class="nav">
+            
             <img src="/img/menu.svg" alt="" class="icon-menu">
             <a class="icon" href="/">
                 <img src="/img/mainNav.png" alt="Icono y título de GR Temporales">
             </a>
             <ul class="menu">
-                <li class="link-active"> <a href="">Inicio </a></li>
-                <li><a href="">Sobre nosotros</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Documentos</a></li>
-                <li><a href="">Nuestros empleados </a>
+                <li class="link-nav link-active"> <a href="/">Inicio</a></li>
+                <li class="link-nav"><a href="">Sobre nosotros</a></li>
+                <li class="link-nav"><a href="">Servicios</a></li>
+                <li class="link-nav"><a href="">Documentos</a></li>
+                <li class="link-nav"><a href="#">Nuestros empleados</a>
+                    <i class="caret fa-solid fa-angle-down"></i>
                     <ul class="sub-menu">
                         <li><a href="">Colilla de pagos y certificados laborales</a></li>
                         <li><a href="">Seguridad y salud en el trabajo</a></li>
                         <li><a href="">Talento humano</a></li>
                     </ul>
                 </li>
-                <li><a href="">Trabaje con nosotros</a>
+                <li class="link-nav">
+                    <a href="/trabaja-con-nosotros">Trabaje con nosotros</a>
+                    <i class="caret fa-solid fa-angle-down"></i>
                     <ul class="sub-menu">
-                        <li><a href="">Ofetas laborales</a></li>
+                        <li><a href="/ofertas-laborales">Ofetas laborales</a></li>
                         <li><a href="">Enviar hoja de vida</a></li>
                         
                     </ul>
                 </li>
-                <li><a href="">Contacto</a></li>
+                <li class="link-nav"><a href="">Contacto</a></li>
             </ul>
         </nav>
        
-          @yield('content')
+          <div class="content-landing">@yield('content')</div>
 
           <footer>
             <div class="main-content-footer">
