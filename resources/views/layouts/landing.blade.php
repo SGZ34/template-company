@@ -36,7 +36,7 @@
                     <i class="caret fa-solid fa-angle-down"></i>
                     <ul class="sub-menu">
                         <li><a href="/ofertas-laborales">Ofetas laborales</a></li>
-                        <li><a href="">Enviar hoja de vida</a></li>
+                        <li><a href="/trabaja-con-nosotros">Enviar hoja de vida</a></li>
                         
                     </ul>
                 </li>
@@ -84,7 +84,13 @@
                 
             </div>
             <div class="copyright">
-                <img src="" alt="">
+                <div class="social">
+                    <a href="https://www.facebook.com/GRTemporales" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/GRTemporales/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    
+                    
+                </div>
+                
                 <p>GR Temporales S.A.S {{date("Y")}} - Derechos Reservados &copy;.</p>
                 <button class="go-toTop">^</button>
             </div>

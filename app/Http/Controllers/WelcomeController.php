@@ -33,7 +33,17 @@ class WelcomeController extends Controller
                 ->where("idVacante", $value->id)
                 ->get();
         }
-        
+
         return view("landing.ofertas", compact("vacantes_disponibles", "cantidad_disponible", "detalles_vacantes"));
+    }
+
+    public function trabajaNosotros()
+    {
+        $vacantes_disponibles = Vacante::select("vacantes.*", "empleos.name as nameEmpleo")
+            ->join("empleos", "vacantes.idEmpleo", "=", "empleos.id")
+            ->where("vacantes.state", 1)
+            ->get();
+
+        return view("landing.trabajaNosotros", compact("vacantes_disponibles"));
     }
 }
