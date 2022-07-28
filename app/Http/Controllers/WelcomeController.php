@@ -46,4 +46,20 @@ class WelcomeController extends Controller
 
         return view("landing.trabajaNosotros", compact("vacantes_disponibles"));
     }
+
+    public function hojaVida(Request $request)
+    {
+        $campos = [
+            "name" => "required|min:4|max:40|string",
+            "apellidos" => "required|min:4|max:80|string",
+            "celular" => "required|numeric|digits_between:7,12",
+            "correo" => "required|email|min:12|max:100",
+            "departamento" => "required|min:4|max:80|string",
+            "municipio" => "required|min:4|max:80|string",
+            "vacante" => "required|numeric",
+            "politicas" => "required",
+            "hoja" => "required|file|mimes:pdf,word",
+        ];
+        $this->validate($request, $campos);
+    }
 }
