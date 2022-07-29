@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("/css/landing/navbar.css");
+@import url("/css/landing/home.css");
+@import url("/css/landing/footer.css");
+@import url("/css/landing/vacantes.css");
+@import url("/css/landing/hojaVida.css");
+@import url("/css/landing/nosotros.css");
+@import url("/css/landing/services.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --dark-primary: #000;
+    --dark: #262626;
+    --primary: #54822f;
+    --white: #fff;
+    --white-section: #f2f2f3;
+    --green-title: #828e00;
+    --text-primary: rgb(120, 120, 120);
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.content-landing {
+    margin-top: 220px;
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+section:nth-child(odd) {
+    background: var(--white);
+}
+
+section:nth-child(even) {
+    background: var(--white-section);
+}
+
+section h1 {
+    color: var(--primary);
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section h1::before,
+section h1::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    width: 100px;
+    height: 2px;
+    margin: 0 10px;
+    background: var(--primary);
+}
+
+@media screen and (max-width: 1000px) {
+    .modal-politicas {
+        width: 80vw;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .modal-politicas {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .modal-politicas .modal-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .modal-politicas {
+        height: 80vh;
+        width: 80vw;
+    }
+
+    .modal-body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    ul.menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        overflow-y: scroll;
+        background: var(--primary);
+        width: 40vw;
+        height: 100vh;
+        margin-top: 0;
+        box-shadow: 0 0 8px var(--dark-primary);
+        transform: translateX(-40vw);
+    }
+
+    .icon-menu {
+        display: block;
+    }
+    .menu li.link-nav {
+        border-radius: 0;
+        padding: 10px 0;
+    }
+    .menu li.link-nav > a {
+        color: var(--white);
+    }
+
+    .menu li.link-nav:hover {
+        background: var(--white);
+    }
+
+    .menu li.link-nav:hover > a,
+    .menu li.link-nav:hover > i.caret {
+        color: var(--dark);
+    }
+
+    .menu li a {
+        width: 40vw;
+    }
+
+    ul.menu li.link-nav:hover > ul.sub-menu {
+        display: none;
+    }
+
+    .menu li.link-nav ul.sub-menu {
+        width: 100%;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .menu li.link-nav ul.sub-menu li {
+        margin: 0;
+    }
+
+    .menu li.link-nav ul.sub-menu li a {
+        color: var(--dark-primary);
+    }
+
+    li.link-nav.link-nav-active {
+        background: var(--white);
+    }
+    ul.menu li.link-nav .caret {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 18px 10px 0 0;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    li.link-nav.link-nav-active > a,
+    li.link-nav.link-nav-active > i.caret {
+        color: var(--dark-primary);
+    }
+
+    .row-card {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+    }
+
+    .container-bienvenidos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-bienvenidos img {
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+    }
+
+    .container-bienvenidos .container-bienvenidos-text {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .indicadores-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-1-footer {
+        width: 100%;
+    }
+
+    .col-2-footer {
+        margin-top: 40px;
+    }
+    .container-nosotros {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-nosotros img {
+        justify-self: center;
+    }
+
+    .work-with-our {
+        grid-column: 1/1;
+        margin-top: 20px;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .content-text-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn-header {
+        padding: 15px;
+        font-size: 10px;
+    }
+    .blog-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-vacantes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header.trabaja-nosotros {
+        height: 45vh;
+    }
+    .container-trabaja-nosotros {
+        justify-content: center;
+    }
+    .container-trabaja-nosotros h1 {
+        font-size: 40px;
+    }
+
+    .content-info-nosotros {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content-mision,
+    .content-vision,
+    .content-politica-calidad {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .content-text-header h6 {
+        text-align: center;
+    }
+
+    .row-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-bienvenidos img {
+        width: 80%;
+        height: 300px;
+    }
+
+    .col-1-footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content-col-1-footer:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    .col-2-footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content-col-2-footer:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .container-vacantes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header.trabaja-nosotros {
+        height: 40vh;
+    }
+
+    .form-contact-with-our {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content-header-nosotros h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    section h1::before,
+    section h1::after {
+        width: 50px;
+    }
+
+    section#trabaje-nosotros h1::before,
+    section h1::after {
+        display: none;
+    }
+
+    .container-nosotros img {
+        width: 280px;
+    }
+
+    .content-info-nosotros,
+    .container-nosotros,
+    .content-footer-nosotros {
+        text-align: center;
+    }
+
+    .content-info-nosotros p,
+    .container-nosotros p,
+    .content-footer-nosotros p {
+        font-size: 15px;
+    }
+
+    header.nosotros {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    ul.menu {
+        width: 70vw;
+        box-shadow: 0 0 8px var(--dark-primary);
+        transform: translateX(-70vw);
+    }
+    .content-text-header h1 {
+        font-size: 2rem;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
+
+    section h1::before,
+    section h1::after {
+        display: none;
+    }
+
+    .row-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .title-footer {
+        font-size: 20px;
+    }
+
+    .content-col-1-footer h1 {
+        font-size: 15px;
+    }
+
+    .content-col-1-footer p {
+        font-size: 12px;
+    }
+
+    .content-col-1-footer ul li a {
+        font-size: 12px;
+    }
+    .content-col-2-footer h1 {
+        font-size: 15px;
+    }
+
+    .content-col-2-footer p {
+        font-size: 12px;
+    }
+
+    footer .btn-blog {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    header.trabaja-nosotros {
+        display: none;
+    }
+
+    .container-trabaja-nosotros h1 {
+        font-size: 30px;
+    }
+}

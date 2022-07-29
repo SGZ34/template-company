@@ -19,7 +19,7 @@
             @endforeach
         </ul>
         <div class="bx-btn-vacante">
-            <a href="" class="btn-vacante">Enviar hoja de vida</a>
+            <a href="/trabaja-con-nosotros" class="btn-vacante">Enviar hoja de vida</a>
         </div>  
     </div>
         

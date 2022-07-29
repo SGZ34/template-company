@@ -1,0 +1,110 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 40px 0 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    z-index: 1000;
+    transition: 0.4s;
+}
+.nav.active {
+    padding: 0;
+    box-shadow: 0 1px 4px var(--dark-primary);
+}
+
+.icon-menu {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    background: #fff;
+    box-shadow: 0 0 15px var(--dark-primary);
+    padding: 0;
+    border-radius: 5px;
+    width: 40px;
+}
+
+.icon img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+ul.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 20px 0;
+    transition: all 0.5s;
+}
+
+ul.menu.menu-active {
+    transform: translateX(0);
+}
+
+.menu li.link-nav {
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 0 2px;
+    position: relative;
+}
+
+.menu li.link-nav:hover {
+    background: var(--primary);
+}
+
+.menu li.link-nav:hover > a {
+    color: var(--white);
+}
+
+.menu li.link-nav.link-active {
+    background: var(--primary);
+}
+.menu li.link-nav.link-active > a {
+    color: var(--white);
+}
+.menu li.link-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--dark);
+    padding: 10px 20px;
+}
+
+ul.sub-menu {
+    display: none;
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+    background: var(--white-section);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu li.link-nav:hover > ul.sub-menu {
+    display: block;
+}
+
+ul.sub-menu li {
+    display: block;
+    overflow: hidden;
+}
+
+ul.sub-menu li:hover {
+    background: var(--white);
+}
+ul.sub-menu li a {
+    display: block;
+}
+
+ul.menu li.link-nav .caret {
+    display: none;
+    position: relative;
+    margin-left: 8px;
+
+    font-size: 1.5rem;
+}

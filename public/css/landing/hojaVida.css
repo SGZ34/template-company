@@ -1,0 +1,214 @@
+header.trabaja-nosotros {
+    height: 80vh;
+    background: url("/img/equipo.jpg");
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-trabaja-nosotros {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-end;
+    transition: 0.5s;
+}
+
+.container-trabaja-nosotros h1 {
+    font-size: 80px;
+    color: var(--primary);
+    opacity: 0.9;
+    transition: 0.5s;
+    position: relative;
+}
+
+.container-trabaja-nosotros:hover {
+    background: rgba(84, 130, 47, 0.5);
+}
+
+.container-trabaja-nosotros:hover > h1 {
+    color: var(--white);
+    opacity: 1;
+}
+
+#trabaje-nosotros h2,
+#trabaje-nosotros h3 {
+    text-align: center;
+    color: var(--text-primary);
+    font-size: 30px;
+}
+#trabaje-nosotros h2 {
+    font-weight: 500;
+}
+
+#trabaje-nosotros h3 {
+    font-weight: 400;
+}
+
+#trabaje-nosotros p {
+    margin-bottom: 20px;
+}
+
+.form-contact-with-our {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-contact-with-our input,
+.form-contact-with-our select {
+    background: var(--white-section);
+    border: 0.5px solid #cacad1;
+    padding: 10px 10px 10px 10px;
+    outline: none;
+    color: var(--text-primary);
+    display: block;
+    width: 100%;
+}
+
+.form-contact-with-our select {
+    align-self: start;
+}
+
+.form-contact-with-our input::placeholder,
+.form-contact-with-our select > option {
+    color: var(--text-primary);
+}
+.form-contact-with-our select > option:checked {
+    display: none;
+}
+
+.form-contact-with-our input[type="file"] {
+    border: none;
+}
+
+.form-contact-with-our label {
+    display: block;
+    color: var(--text-primary);
+}
+
+.form-contact-with-our .group label {
+    margin-bottom: 10px;
+}
+
+.form-contact-with-our .group input[type="checkbox"] {
+    margin-right: 10px;
+    display: inline;
+    width: auto;
+}
+
+.form-contact-with-our .group button {
+    background: var(--primary);
+    color: var(--white);
+    font-size: 12px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.form-contact-with-our .group button:hover {
+    background: rgb(69, 104, 40);
+}
+
+.form-contact-with-our button[type="submit"] {
+    grid-column: 1/2;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-self: start;
+}
+
+.form-contact-with-our button[type="submit"]:hover {
+    background: rgb(69, 104, 40);
+}
+input.error-input,
+select.error-input {
+    border: 2px solid #c20000;
+    box-shadow: 0 0 4px #c20000;
+}
+
+.error-message {
+    color: #c20000;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.lightbox.show {
+    z-index: 2000;
+    opacity: 1;
+}
+
+.modal-politicas {
+    position: relative;
+    background: var(--white);
+    width: 45vw;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+.modal-header {
+    background: var(--white-section);
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.modal-title {
+    font-weight: 300;
+}
+
+.modal-body {
+    padding: 20px 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-modal-green {
+    color: var(--green-title);
+    font-weight: 700;
+}
+
+.close-modal {
+    padding: 10px 20px;
+    color: var(--white);
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    background: #f00;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.close-modal:hover {
+    background: rgb(190, 4, 4);
+}
+
+.modal-body ul {
+    margin: 20px 0 10px 20px;
+}

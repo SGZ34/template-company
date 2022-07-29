@@ -1,0 +1,109 @@
+footer {
+    height: 40vh;
+    margin: 0 auto;
+    color: var(--white);
+}
+
+.main-content-footer {
+    padding: 20px 85px;
+    background: #2193b0;
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+.title-footer {
+    text-align: center;
+}
+
+.bx-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.col-1-footer {
+    display: grid;
+    grid-template-columns: 340px 250px;
+    column-gap: 40px;
+}
+
+.content-col-1-footer h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.content-col-1-footer ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.ofertas-menu li a:hover {
+    text-decoration: underline;
+}
+
+.col-2-footer {
+    display: grid;
+    grid-template-columns: 120px 400px;
+    column-gap: 20px;
+}
+.col-2-footer img {
+    width: 120px;
+    position: relative;
+    top: 20px;
+}
+
+.content-col-2-footer h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.copyright {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.social a {
+    margin: 0 10px;
+    padding: 10px;
+    transition: all 0.4s;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    color: var(--white);
+    display: inline-block;
+}
+.social i {
+    font-size: 20px;
+}
+
+.social a:hover {
+    background: var(--white);
+    transform: translateY(-5px);
+}
+.social a:hover > i {
+    color: var(--dark-primary);
+}
+
+.go-toTop {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.go-toTop:hover {
+    background: var(--white);
+    color: var(--primary);
+    transform: scale(1.1);
+}

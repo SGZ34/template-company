@@ -8,10 +8,12 @@
         <link rel="icon" href="/img/icon.png">
         <link rel="stylesheet" href="/css/animations/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/landing/styles.css">
     </head>
     <body>
         
+
+
         <nav class="nav">
             
             <img src="/img/menu.svg" alt="" class="icon-menu">
@@ -19,10 +21,17 @@
                 <img src="/img/mainNav.png" alt="Icono y título de GR Temporales">
             </a>
             <ul class="menu">
-                <li class="link-nav link-active"> <a href="/">Inicio</a></li>
-                <li class="link-nav"><a href="">Sobre nosotros</a></li>
-                <li class="link-nav"><a href="">Servicios</a></li>
-                <li class="link-nav"><a href="">Documentos</a></li>
+                <li class="link-nav {{setActive("/")}}"> <a href="/">Inicio</a></li>
+                <li class="link-nav {{setActive("nosotros")}}"><a href="/nosotros">Sobre nosotros</a></li>
+                <li class="link-nav {{setActive("servicios")}}"><a href="/servicios">Servicios</a></li>
+                <li class="link-nav"><a href="">Documentos</a>
+                    <i class="caret fa-solid fa-angle-down"></i>
+                    <ul class="sub-menu">
+                        <li><a href="/files/REGLAMENTO_GR_TEMPORALES.pdf" target="_blank">Reglamento interno del trabajo</a></li>
+                        <li><a href="/files/Acta_de_constitucion.pdf" target="_blank">Acta de constitución</a></li>
+                        
+                    </ul>
+                </li>
                 <li class="link-nav"><a href="#">Nuestros empleados</a>
                     <i class="caret fa-solid fa-angle-down"></i>
                     <ul class="sub-menu">
@@ -31,11 +40,11 @@
                         <li><a href="">Talento humano</a></li>
                     </ul>
                 </li>
-                <li class="link-nav">
+                <li class="link-nav {{setActive("trabaja-con-nosotros")}}">
                     <a href="/trabaja-con-nosotros">Trabaje con nosotros</a>
                     <i class="caret fa-solid fa-angle-down"></i>
                     <ul class="sub-menu">
-                        <li><a href="/ofertas-laborales">Ofetas laborales</a></li>
+                        <li><a href="/trabaja-con-nosotros/ofertas-laborales">Ofetas laborales</a></li>
                         <li><a href="/trabaja-con-nosotros">Enviar hoja de vida</a></li>
                         
                     </ul>
@@ -57,7 +66,7 @@
                         </div>
                         <div class="content-col-1-footer">
                             <h1>Nuestra oferta</h1>
-                            <ul>
+                            <ul class="ofertas-menu">
                                 <li><a href="">Negocios especializados</a></li>
                                 <li><a href="">Selección de personal</a></li>
                                 <li><a href="">Visita domiciliaria</a></li>
@@ -92,7 +101,7 @@
                 </div>
                 
                 <p>GR Temporales S.A.S {{date("Y")}} - Derechos Reservados &copy;.</p>
-                <button class="go-toTop">^</button>
+                <button class="go-toTop"><i class="fa-solid fa-chevron-up"></i></button>
             </div>
           </footer>
 

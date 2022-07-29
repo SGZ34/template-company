@@ -5,6 +5,31 @@
 @endsection
 
 @section('content')
+
+<div class="lightbox">
+    <div class="modal-politicas">
+        <div class="modal-header">
+            <h1 class="modal-title">
+                Políticas de tratamiento de datos
+             </h1>
+        </div>
+        <div class="modal-body">
+            <p>Manifiesto que a partir de la entrega de mi hoja de vida y documentación asociada estoy autorizando libre, expresa y voluntariamente a la compañía, para dar el tratamiento de mis datos personales suministrados a <span class="text-modal-green">GESTIÓN DE RECURSOS TEMPORALES S.A.S “GR TEMPORALES”</span>, los cuales podrán ser utilizados para lo siguiente:</p>
+            <ul>
+                <li>Confirmación de referencias personales y laborales.</li>
+                <li>Realizar la visita domiciliaria y consulta de antecedentes.
+                </li>
+                <li>Envío información personal del colaborador en misión a las empresas clientes para sus fines específicos.
+                </li>
+                <li>Compartir hojas de vida para futuros procesos de selección en otras empresas.
+                </li>
+                <li>Las demás necesarias y que apliquen en los procesos de selección y contratación.
+                </li>
+            </ul>
+            <button type="button" class="close-modal">Cerrar</button>
+        </div>
+    </div>
+</div>
 <header class="trabaja-nosotros">
     <div class="container-trabaja-nosotros">
         <h1>Trabaje con Nosotros</h1>    
@@ -17,7 +42,10 @@
         <p>
             En GR TEMPORALES estamos dispuestos a construir una historia diferente para nuestros clientes y colaboradores, consolidando relaciones sólidas y generando experiencias positivas en cada proyecto. Por esto los invitamos a que logren sus objetivos en conjunto con nuestra organización. ¡Buscamos gente como tú!
             
-            Es importante que tengas en cuenta que a través de nuestra página podrá diligenciar tu hoja de vida permitiéndole a nuestros psicólogos con mayor facilidad la información suministrada. Para unirte a nuestro equipo, registrar la hoja de vida a continuación:</p>
+            Es importante que tengas en cuenta que a través de nuestra página podrá diligenciar tu hoja de vida permitiéndole a nuestros psicólogos con mayor facilidad la información suministrada. Para unirte a nuestro equipo, registrar la hoja de vida a continuación:
+        </p>
+
+        
 
         <form action="/enviar-hoja-vida" class="form-contact-with-our" method="POST" enctype="multipart/form-data">
             @csrf
@@ -86,7 +114,7 @@
                         Políticas de privacidad
                     </label>
                     <input type="checkbox" name="politicas" id="">
-                    <button type="button">Políticas de tratamiento de datos</button>
+                    <button type="button" class="open-modal">Políticas de tratamiento de datos</button>
                     @error('politicas')
                     <div>
                         <span><strong class="error-message">{{$message}}</strong></span>

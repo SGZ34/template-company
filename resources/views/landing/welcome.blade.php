@@ -8,7 +8,7 @@
     <header >
         <div class="content-header">
                 <div class="content-text-header">
-                    <h1>Lo que estás buscando, te ayudamos a encontrarlo <a href="">aquí</a>.</h1>
+                    <h1>Lo que estás buscando, te ayudamos a encontrarlo <a href="/trabaja-con-nosotros/ofertas-laborales">aquí</a>.</h1>
                 <h6>Habla con nosotros en vivo y encuentra lo que necesitas en segundos</h6>
                 <a href="" class="btn-header">Quiero ver más</a>
                 </div>

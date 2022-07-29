@@ -62,4 +62,14 @@ class WelcomeController extends Controller
         ];
         $this->validate($request, $campos);
     }
+
+    public function nosotros()
+    {
+        return view("landing.nosotros");
+    }
+
+    public function servicios()
+    {
+        return view("landing.servicios");
+    }
 }

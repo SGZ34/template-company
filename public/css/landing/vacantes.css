@@ -1,0 +1,60 @@
+.container-vacantes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.card-vacante {
+    box-shadow: 0 0 3px var(--dark-primary);
+    margin-top: 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-vacante-title {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.card-vacante-description {
+    font-size: 18px;
+}
+
+.card-vacante-puestos {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.card-vacante-ciudades {
+    margin-top: 5px;
+}
+
+.list-ciudades-vacante {
+    list-style-type: none;
+}
+
+.bx-btn-vacante {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-vacante {
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-vacante:hover {
+    background: rgb(69, 104, 40);
+}
