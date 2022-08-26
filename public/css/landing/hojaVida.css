@@ -1,6 +1,6 @@
 header.trabaja-nosotros {
     height: 80vh;
-    background: url("/img/equipo.jpg");
+    background: url("/img/bienvenidos.png");
     background-position: center;
     background-attachment: local;
     background-size: cover;
@@ -25,7 +25,7 @@ header.trabaja-nosotros {
 }
 
 .container-trabaja-nosotros:hover {
-    background: rgba(84, 130, 47, 0.5);
+    background: rgba(18, 52, 86, 0.7);
 }
 
 .container-trabaja-nosotros:hover > h1 {

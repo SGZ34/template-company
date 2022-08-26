@@ -56,5 +56,7 @@
 }
 
 .btn-vacante:hover {
-    background: rgb(69, 104, 40);
+    background: var(--white);
+    border: 1px solid var(--primary);
+    color: var(--dark-primary);
 }

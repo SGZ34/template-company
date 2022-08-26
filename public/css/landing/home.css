@@ -172,7 +172,7 @@ header {
     font-style: italic;
 }
 .container-bienvenidos-text h4 {
-    color: #3e9100;
+    color: var(--primary);
     font-weight: 300;
     margin-bottom: 10px;
     font-style: italic;

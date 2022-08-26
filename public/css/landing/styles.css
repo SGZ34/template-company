@@ -18,10 +18,10 @@
 :root {
     --dark-primary: #000;
     --dark: #262626;
-    --primary: #54822f;
+    --primary: #123456;
     --white: #fff;
     --white-section: #f2f2f3;
-    --green-title: #828e00;
+    --green-title: #1c4d7e;
     --text-primary: rgb(120, 120, 120);
     scroll-behavior: smooth;
 }

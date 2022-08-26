@@ -14,17 +14,15 @@
              </h1>
         </div>
         <div class="modal-body">
-            <p>Manifiesto que a partir de la entrega de mi hoja de vida y documentación asociada estoy autorizando libre, expresa y voluntariamente a la compañía, para dar el tratamiento de mis datos personales suministrados a <span class="text-modal-green">GESTIÓN DE RECURSOS TEMPORALES S.A.S “GR TEMPORALES”</span>, los cuales podrán ser utilizados para lo siguiente:</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam cupiditate ipsa culpa iste eligendi officiis eius odio dolorum ratione. <span class="text-modal-green">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>, los cuales podrán ser utilizados para lo siguiente:</p>
             <ul>
-                <li>Confirmación de referencias personales y laborales.</li>
-                <li>Realizar la visita domiciliaria y consulta de antecedentes.
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, eveniet fugiat. Eos sapiente saepe neque doloremque deleniti?
                 </li>
-                <li>Envío información personal del colaborador en misión a las empresas clientes para sus fines específicos.
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 </li>
-                <li>Compartir hojas de vida para futuros procesos de selección en otras empresas.
-                </li>
-                <li>Las demás necesarias y que apliquen en los procesos de selección y contratación.
-                </li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
             </ul>
             <button type="button" class="close-modal">Cerrar</button>
         </div>
@@ -40,9 +38,7 @@
         <h2>¡Bienvenido! (a)</h2>
         <h3>Trabaje con nosotros</h3>
         <p>
-            En GR TEMPORALES estamos dispuestos a construir una historia diferente para nuestros clientes y colaboradores, consolidando relaciones sólidas y generando experiencias positivas en cada proyecto. Por esto los invitamos a que logren sus objetivos en conjunto con nuestra organización. ¡Buscamos gente como tú!
-            
-            Es importante que tengas en cuenta que a través de nuestra página podrá diligenciar tu hoja de vida permitiéndole a nuestros psicólogos con mayor facilidad la información suministrada. Para unirte a nuestro equipo, registrar la hoja de vida a continuación:
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illum fugiat asperiores. Asperiores sunt quasi eligendi vero quod rem amet quos rerum, eos quisquam aliquam eius, quidem reprehenderit ut vel facilis praesentium numquam iure aut culpa. Inventore, ex mollitia magni velit dignissimos maiores excepturi pariatur tempora sed sint. Voluptas facilis molestias aut deserunt dolor eaque nulla laboriosam quibusdam provident eius, tempore repellendus fuga debitis illo cum ad labore aspernatur iusto aliquam corrupti soluta qui delectus dolores officiis? Ratione temporibus architecto explicabo dolorum, quos quaerat veniam cupiditate natus. Magnam maxime non, modi qui quaerat, ea ratione nulla sint tempore facere nesciunt numquam sit amet tempora. Error rerum perferendis asperiores distinctio. Ea, at corporis iure ducimus tenetur tempora blanditiis alias totam vel?
         </p>
 
         

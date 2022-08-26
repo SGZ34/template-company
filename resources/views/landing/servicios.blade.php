@@ -16,7 +16,7 @@
             <div>
                 <h2>Nuestros servicios</h2>
                 <h3>Comprometidas con nuestro labor</h3>
-                <p>En <span>GRTEMPORALES</span> contamos con un equipo humano especializados para garantizar el cumplimiento de nuestra labor; ofreciendo soluciones en Recursos Humanos a organizaciones que requieran nuestros servicios a través de una selección minuciosa del personal que cumpla los requisitos establecidos y que se adecue al perfil profesional requerido por cada uno de nuestros clientes.</p>
+                <p>En <span>Lorem.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere incidunt ipsam. Voluptatem culpa reprehenderit modi aut iure cumque. Deleniti eum quasi cumque nam porro, modi suscipit aut dolor aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, aperiam inventore. Architecto, nihil accusamus! Recusandae tenetur aut ullam odio illo.</p>
             </div>
             <img src="/img/team-service.png" alt="">
         </div>
@@ -27,23 +27,23 @@
                 <img src="/img/card-service1.png" alt="">
                     <div class="container-text">
                         <h3>Negocios Especializados</h3>
-                    <p>A través GRTEMPORALES seleccionamos el personal adecuado en áreas administrativas mandos medios, directivos y técnicos, para todo tipo de empresas en una amplia gama de sectores.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nobis soluta ducimus a ex vitae illo ad, explicabo vel expedita.</p>
                     </div>
             </div>
             <div class="card-service">
                 <img src="/img/card-service2.png" alt="">
                     <div class="container-text">
                         <h3>Selección Personal</h3>
-                    <p>En GRTEMPORALES, desarrollamos un proceso técnico Profesional de selección que consiste en una serie de actividades, desde conseguir los candidatos, hasta evaluar quienes de ellos se ajustan al perfil requerido por la empresa. Nuestro proceso se realiza de la siguiente manera:</p> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit mollitia non accusantium ut cumque harum illum necessitatibus minima. Enim quae, aut natus, laborum amet cupiditate minus ab maxime, ea similique distinctio cumque vitae nobis quis?: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nam at rem officia quae mollitia quas, debitis ipsa deleniti cumque.</p> 
                     
                     <ol class="list">
-                        <li>LEVANTAMIENTO PRESENCIAL O VIRTUAL DEL PERFIL</li>
-                        <li>RECLUTAMIENTO</li>
-                        <li>APLICACIÓN DE PRUEBA</li>
-                        <li>ENTREVISTA</li>
-                        <li>REFERENCIACIÓN</li>
-                        <li>INFORME DE SELECCIÓN</li>
-                        <li>PRESENTACIÓN DE CANDIDATOS</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
                     </ol>
                      
                     </div>
@@ -53,7 +53,7 @@
                     <div class="container-text">
                         <h3>Visita Domiciliaria
                         </h3>
-                        <p>En la VISITA DOMICILIARIA verificamos los datos personales, originalidad de los documentos, información familiar, historia familiar, vivienda, influencia de grupos delincuenciales, referencias laborales etc. Al culminar este proceso suministramos toda la información de la persona, incluyendo todas las características de la persona y su entorno familiar, social y las conclusiones que arroja este estudio en especial. Dada la responsabilidad de la visita, esta se realiza directamente con la persona y los funcionarios de nuestro departamento.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sapiente quos. Atque dicta rem, iure exercitationem dignissimos recusandae quas hic modi ut possimus expedita sint voluptates unde corrupti voluptatem, veritatis eius molestias quibusdam dolores quia iusto porro et libero nihil? Quia, soluta. Tempora cumque, animi voluptate nisi placeat deleniti quis eaque expedita, eveniet odio ducimus quos possimus alias provident quod earum ipsum repellendus nesciunt beatae omnis labore! Non enim libero vel, fugit distinctio sapiente velit! Necessitatibus iusto minima doloremque ad!</p>
                     </div>
             </div>
         </div>
@@ -63,16 +63,16 @@
             <div class="footer-card-service">
                 <img src="/img/card-footer-service1.png" alt="">
                 <div class="container-text-card-footer-service">
-                    <h3>Estudio de Seguridad</h3>
-                <p>Buscamos en primera instancia indagar sobre antecedentes judiciales y establecer la plena identidad del candidato. Adicionalmente, establecemos la autenticidad de sus documentos de identidad: libreta militar, certificado judicial, así como también documentos académicos como diplomas y actas de grado. Al culminar este proceso suministramos toda la información de la persona, así también como el concepto técnico sobre el resultado y las conclusiones arrojadas en el estudio.</p>
+                    <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dicta eos dignissimos neque harum dolore praesentium quibusdam temporibus, aliquid officia autem in magni, earum laboriosam iste ab assumenda sint pariatur saepe animi! Deleniti, magni ea?</p>
                 </div>
             </div>
             <div class="footer-card-service">
                 <img src="/img/card-footer-service2.png" alt="">
                 <div class="container-text-card-footer-service">
-                    <h3>Prueba de Poligrafía
+                    <h3>Lorem, ipsum dolor.
                     </h3>
-                    <p>Ofrecemos a todos nuestros clientes este servicio, con el propósito de generarle la mayor confianza posible en la contratación de personal idóneo para el cargo requerido, con proveedores certificados en el área.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis minima aut porro dolor. Harum quaerat distinctio delectus provident omnis! Molestias eum porro ipsam quibusdam, ad repellendus autem eaque dolor ipsum. Ullam fuga adipisci impedit officiis vero repellat deleniti pariatur?</p>
                 </div>
             </div>
         </div>
